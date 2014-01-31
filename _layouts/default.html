@@ -1,0 +1,45 @@
+{% include head.html %}
+<body class="flexgrid index">
+<div class="tldr">pinch/zoom is a mobile design agency, led by renowned mobile expert Brian Fling. we use mobile design and technologies to help companies be mobile first - to do more with less.</div>
+
+{% include shelf.html %}
+
+<div id="prev" onclick="paginate.scrollToPage('prev', 0);return false"><i class="icon-angle-left"></i></div>
+
+<div class="fauxport container">
+<div id="position" class="loc1">
+
+<div class="dev px">pz.v3.1</div>
+
+<header role="main">
+<div id="brand" class="animated fadeInLeft"><div class="rel"><a href="#" class="menu" data-push="shelf"><i class="icon-reorder"></i><h1 class="logo">pinch<small>/</small>zoom</h1></a></div></div>
+</header>
+
+<article id="paginate" class="swipe scroll">
+
+  <div class="paging pg7">
+
+    <section id="cover" class="page animated fadeIn">
+      <div class="rel">
+        <header>
+          <h1>the art of <strong>mobile design</strong></h1>
+          <p><a href="#" onclick="paginate.scrollToPage('next', 0);return false">welcome to a different type of agency</a></p>
+
+        </header>
+      </div>
+    </section>
+
+    {{ content }}
+        
+  </div>
+
+  {% include footer.html %}
+</article>
+
+<div id="next" onclick="paginate.scrollToPage('next', 0);return false"><i class="icon-angle-right"></i></div>
+
+</div>
+</div>
+{% include js.html %}
+</body>
+</html>

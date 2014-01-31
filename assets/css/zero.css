@@ -1,0 +1,923 @@
+/*  zero.css
+    a digital starter kit
+    made in seattle & hawaii by pinchzoom.com
+    released under MIT license
+*/
+
+
+/* reset elements */
+  div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* reset box model */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+
+html, body { 
+  margin: 0;
+  padding: 0;   
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { 
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin: 0;
+  padding: 0;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+input { 
+  outline: none; 
+}
+
+a.btn {
+  display: inline-block;
+}
+
+/*  zero/decoration.css
+    made in seattle & hawaii by pinchzoom.com
+    released under MIT license
+*/
+
+body {
+  color: black;
+  background-color: white;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #ffffff;
+}
+
+a img { border: none; }
+
+input, textarea, select { 
+  -webkit-appearance: none;
+  border: 1px solid #ccc;
+}
+
+/*  zero/text.css
+    made in seattle & hawaii by pinchzoom.com
+    released under MIT license
+*/
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  font: 16px/1em "Helvetica Neue", "Droid Sans", "Segoe WP", sans-serif;
+}
+
+cite {
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizelegibility;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: normal;
+  font-style: normal;
+}
+
+ol, ul, dl, li, dt, dd, p {
+  line-height: 1em;
+  font-size: 1em;
+}
+
+ol, ul { 
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+small {
+  font-size: .9em;
+}
+
+q, blockquote { 
+  quotes: none; 
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+
+
+.layout {
+  
+}
+
+.splitview .sidebar, .splitview .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.splitview .sidebar {
+  width: 220px;
+}
+
+.splitview .content {
+  left: 220px;
+}
+
+.container {
+/*  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;*/
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+/*  overflow: hidden;*/
+}
+
+.container .content {
+  -webkit-transition: all .3s ease-in-out;  
+  -moz-transition: all .3s ease-in-out;  
+}
+
+.app {
+  overflow: hidden;
+}
+
+header.bar + section {
+  position: absolute;
+  top: 44px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+div.tabs .tab {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.app ul.tabs.footer + .tabs {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  bottom: 50px;
+}
+
+.stack {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+   position: relative;
+   height: 100%;
+   width: 100%;
+ }
+
+div[class*="pos2-"], div[class*=" pos2-"] {
+  left: -100%;  
+}
+
+/*.stack.pos2 {
+  left: -100%;
+}*/
+
+/*.stack.pos3 {
+  left: -200%;
+}*/
+
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.card.pos2 {
+  left: 100%;
+  top: 0;
+  position: absolute;
+}
+
+.stack .list li {
+  position: inherit;
+}
+
+.stack .list li li {
+  position: relative;
+}
+
+ul.card {
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+.card.child {
+  top: 0;
+  left: 100%;
+  position: absolute;
+/*  display: none;*/
+  opacity: 0;
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+}
+
+
+.scroll { 
+  overflow: scroll;
+  overflow-x: hidden;
+  -moz-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
+  -moz-transform: translate3d(0,0,0);
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translate3d(0,0,0);  
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.scroll::-webkit-scrollbar, .scroll::-moz-scrollbar {
+  display: none;
+}
+
+
+/* @group shelf */
+
+#shelf {
+  position: absolute;
+  left: -280px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  width: 280px;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+}
+
+#shelf.push {
+  left: 0px;
+  width: 280px;
+  height: 100%;
+}
+
+/*#shelf .clip {
+  width: 280px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}*/
+
+#shelf menu.primary {
+  position: absolute;
+  z-index: 300;
+  width: 280px;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+#shelf menu {
+  margin: 0;
+}
+
+#shelf header.toolbar {
+  height: 44px;
+}
+
+#shelf menu li {
+  border-top-style: none;
+}
+
+#shelf menu li a p {
+  color: #d4d3d3;
+  text-shadow: 0 -1px 0 black;
+  font-size: .8em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: .1em;
+  max-height: 3em;
+  overflow: hidden;
+}
+
+#shelf menu li+ul {
+  -webkit-transition: all .2s ease-in-out;  
+  -moz-transition: all .2s ease-in-out;   
+  height: 0;
+  overflow: hidden;
+}
+
+#shelf menu li.open+ul {
+  height: 400px;
+  overflow: scroll;
+}
+
+#shelf menu li ul li:first-child {
+  border-top-style: solid;
+}
+
+#shelf menu a {
+}
+
+#shelf.push menu.primary {
+  left: 0;
+  padding: 0;
+}
+
+#shelf menu.primary, #shelf.unpush menu.primary {
+/*  left: -280px;*/
+}
+
+#shelf.push {
+  left: 0px;
+}
+
+#shelf.push ~ .container {
+  left: 280px;
+  right: -280px;
+}
+
+#shelf + .mask {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 280px;
+  z-index: 1;
+}
+
+#shelf.push + .mask {
+  display: block;
+  z-index: 1000;
+}
+
+/* @end */
+
+.modal {
+  background-color: white;
+  -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  height: 97%;
+  bottom: -100%;
+  width: 700px;
+  left: 50%;
+  margin-left: -350px;
+  z-index: 1200;
+
+}
+
+.phone .modal {
+  width: 100%;
+  height: 100%;
+  top: 200%;
+  left: 0;
+  margin-left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.modal.push {
+  bottom: 0;
+}
+
+.phone .modal.push {
+  top: 0;
+}
+
+.modal + .mask {
+  background-color: rgba(0, 0, 0, 0.15);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  display: none;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+}
+
+.modal.push + .mask {
+  opacity: 1;
+  display: block;
+  z-index: 1100;
+}
+
+
+/* @group segmented controller */
+
+.segmented, .seg {
+  display: inline-block;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+.segmented li, .seg li {
+  display: inline-block;
+  border-right: 1px solid #999;
+  margin-right: -4px;
+}
+
+.segmented li:last-child, .seg li:last-child {
+  border-right: none;
+  margin-right: 0;
+}
+
+.segmented li a, .seg li a {
+  padding: 8px;
+  display: block;
+}
+
+/* @end */
+
+/* @group tab controller */
+
+ul.tabs {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+ul.tabs li { 
+  border: 0 solid silver;
+  border-width: 1px 1px 0 0;
+  display: table-cell;
+  height: 44px;
+  text-align: center;
+  font-size: 12px;
+}
+
+ul.tabs li:last-child { 
+  border-right: none; 
+}
+
+/* @end */
+
+/* @group footer tab controller */
+
+ul.tabs.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+}
+
+ul.tabs.footer li {
+  display: table-cell;
+  height: 50px;
+  vertical-align: middle;
+  background-color: #f6f7f6;
+  border-bottom-style: none;
+}
+
+ul.tabs.footer li a {
+  display: block;
+  padding: 5px;
+}
+
+ul.tabs.footer li a i {
+  display: block;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  padding-bottom: 6px;
+  line-height: 1em;
+  width: inherit;
+}
+
+/* @end */
+
+
+a.btn {
+  border: 1px solid #c8cac8;
+  border-radius: 4px;
+  padding: 5px 14px;
+  font-size: 12px;
+  -moz-box-shadow: 0 1px 0 #ffffff;
+  -webkit-box-shadow: 0 1px 0 #ffffff;
+  box-shadow: 0 1px 0 #ffffff;
+  font-weight: bold;
+}
+
+.bar .btn.right {
+  position: absolute;
+  right: 6px;
+  top: 7px;
+}
+
+.bar .btn.left, .bar .btn.back {
+  position: absolute;
+  left: 6px;
+  top: 7px;
+}
+
+
+input, textarea {
+  font: 16px/1em "Helvetica Neue", "Droid Sans", "Segoe WP", sans-serif;
+  width: 100%;
+  border-style: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+textarea:focus {
+  outline: none;
+}
+.list {
+  margin-bottom: 65px;
+}
+
+ul.list, .list ul  {
+}
+
+.list li {
+  border-bottom: 1px solid #c9cac9;
+  position: relative;
+  font-size: 20px;
+  padding: 14px 10px;
+  border-top: 1px solid white;
+  text-shadow: 0 1px 0 #ffffff;
+}
+
+.list p {
+  text-align: center;
+  color: #4b556b;
+  font-size: 14px;
+  text-shadow: 0 1px 0 #ffffff;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.list li p {
+  margin: 0 5px;
+  line-height: 1.4em;
+  text-align: left;
+  color: black;
+  font-size: 14px;
+}
+
+.list li p + p {
+  margin-top: 12px;
+}
+
+.list li a { 
+  padding: 14px 10px;
+  margin: -14px -10px;
+  display: block;
+  font-weight: bold;
+}
+
+.list small {
+  display: block;
+  color: #8f908f;
+  font-weight: normal;
+  font-style: normal;
+  margin-bottom: -5px;
+  font-size: 14px;
+}
+
+.list i {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.list i::before {
+  top: 5px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.list i::before, .list i::after {
+  position: relative;
+  display: block;
+  width: 12px;
+  height: 4px;
+  background-color: #999;
+  content: '';
+}
+
+.list i::after {
+  top: 7px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.list li.header {
+  color: white;
+  font-weight: bold;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#dedede), to(#a7a7a7));
+  background-image: -moz-linear-gradient(90deg, #dedede 0%, #a7a7a7 100%);
+  text-shadow: 0 1px 0 #696969;
+  font-size: 18px;
+}
+
+.list.inset ul {
+  margin: 10px;
+  border-radius: 15px;
+  -webkit-background-clip: padding-box;
+  overflow: hidden;
+  border: 1px solid #b6b8bd;
+  -moz-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1), 0 2px 0 rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1), 0 2px 0 rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1), 0 2px 0 rgba(255, 255, 255, 0.75);
+}
+
+.list.inset ul li:last-child {
+  border-bottom-style: none;
+}
+
+
+.list.inset ul li:first-child {
+  border-top-style: none;
+}
+
+.list.inset h4 {
+  padding: 20px 20px 0;
+  font-weight: bold;
+  color: #4b556b;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  font-size: 18px;
+}
+
+
+@media only screen and (min-width: 760px) {
+
+.list.inset ul {
+  margin: 10px 30px;
+}
+
+.list.inset h4 {
+  margin: 0 20px;
+}
+
+}
+
+.bar {
+  position: relative;
+}
+
+header.bar {
+  height: 44px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 4px 8px;
+  z-index: 100;
+}
+
+.bar h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.6em;
+}
+
+.app {
+  overflow: hidden;
+}
+
+.app ul.tabs {
+  display: table;
+  width: 100%;
+}
+
+.app ul.tabs li { 
+  display: table-cell;
+  height: 44px;
+}
+
+.app ul.tabs.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.app ul.tabs.footer li { 
+  height: 50px;
+}
+
+.app ul.tabs.footer + .tabs {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  bottom: 50px;
+}
+
+.app div.tabs .tab {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+
+}
+
+.app header.bar {
+  height: 44px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 4px 8px;
+  text-align: center;
+}
+
+
+
+.stack.pos2 {
+  left: -100%;
+}
+
+.stack.pos3 {
+  left: -200%;
+}
+
+.app header.bar + section {
+  position: absolute;
+  top: 44px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.stack {
+  -webkit-transition: all .2s ease-in-out;
+   position: relative;
+   height: 100%;
+   width: 100%;
+ }
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/*.card:nth-of-type(2) {
+  top: 0;
+  left: 100%;
+  position: absolute;
+}
+
+.card:nth-of-type(3) {
+  top: 0;
+  left: 200%;
+  position: absolute;
+}*/
+
+.view {
+/*  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;*/
+}
+
+/*#card2 {
+  left: 100%;
+  position: absolute;
+}
+
+#card3 {
+  position: absolute;
+  left: 200%;
+}*/
+
+/*.app .master {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.app header + section {
+  position: absolute;
+  top: 44px;
+  right: 0;
+  left: 0;
+  bottom: 50px;
+}
+
+.app .scroll { 
+  overflow: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+.app footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.view + footer > .view {
+  background-color: red;
+}*/
+
+/* @end */
+

@@ -1,0 +1,256 @@
+/* @group flexgrid */
+
+/* @group font resets */
+
+@media only screen and (max-width:2560px) { body {font-size: 2560px;}}
+@media only screen and (max-width:2528px) { body {font-size: 2528px;}}
+@media only screen and (max-width:2496px) { body {font-size: 2496px;}}
+@media only screen and (max-width:2464px) { body {font-size: 2464px;}}
+@media only screen and (max-width:2432px) { body {font-size: 2432px;}}
+@media only screen and (max-width:2400px) { body {font-size: 2400px;}}
+@media only screen and (max-width:2368px) { body {font-size: 2368px;}}
+@media only screen and (max-width:2336px) { body {font-size: 2336px;}}
+@media only screen and (max-width:2304px) { body {font-size: 2304px;}}
+@media only screen and (max-width:2272px) { body {font-size: 2272px;}}
+@media only screen and (max-width:2240px) { body {font-size: 2240px;}}
+@media only screen and (max-width:2208px) { body {font-size: 2208px;}}
+@media only screen and (max-width:2176px) { body {font-size: 2176px;}}
+@media only screen and (max-width:2144px) { body {font-size: 2144px;}}
+@media only screen and (max-width:2112px) { body {font-size: 2112px;}}
+@media only screen and (max-width:2080px) { body {font-size: 2080px;}}
+@media only screen and (max-width:2048px) { body {font-size: 2048px;}}
+@media only screen and (max-width:2016px) { body {font-size: 2016px;}}
+@media only screen and (max-width:1984px) { body {font-size: 1984px;}}
+@media only screen and (max-width:1952px) { body {font-size: 1952px;}}
+@media only screen and (max-width:1920px) { body {font-size: 1920px;}}
+@media only screen and (max-width:1888px) { body {font-size: 1888px;}}
+@media only screen and (max-width:1856px) { body {font-size: 1856px;}}
+@media only screen and (max-width:1824px) { body {font-size: 1824px;}}
+@media only screen and (max-width:1792px) { body {font-size: 1792px;}}
+@media only screen and (max-width:1760px) { body {font-size: 1760px;}}
+@media only screen and (max-width:1728px) { body {font-size: 1728px;}}
+@media only screen and (max-width:1696px) { body {font-size: 1696px;}}
+@media only screen and (max-width:1664px) { body {font-size: 1664px;}}
+@media only screen and (max-width:1632px) { body {font-size: 1632px;}}
+@media only screen and (max-width:1600px) { body {font-size: 1600px;}}
+@media only screen and (max-width:1568px) { body {font-size: 1568px;}}
+@media only screen and (max-width:1536px) { body {font-size: 1536px;}}
+@media only screen and (max-width:1504px) { body {font-size: 1504px;}}
+@media only screen and (max-width:1472px) { body {font-size: 1472px;}}
+@media only screen and (max-width:1440px) { body {font-size: 1440px;}}
+@media only screen and (max-width:1408px) { body {font-size: 1408px;}}
+@media only screen and (max-width:1376px) { body {font-size: 1376px;}}
+@media only screen and (max-width:1344px) { body {font-size: 1344px;}}
+@media only screen and (max-width:1312px) { body {font-size: 1312px;}}
+@media only screen and (max-width:1280px) { body {font-size: 1280px;}}
+@media only screen and (max-width:1248px) { body {font-size: 1248px;}}
+@media only screen and (max-width:1216px) { body {font-size: 1216px;}}
+@media only screen and (max-width:1184px) { body {font-size: 1184px;}}
+@media only screen and (max-width:1152px) { body {font-size: 1152px;}}
+@media only screen and (max-width:1120px) { body {font-size: 1120px;}}
+@media only screen and (max-width:1088px) { body {font-size: 1088px;}}
+@media only screen and (max-width:1056px) { body {font-size: 1056px;}}
+@media only screen and (max-width:1024px) { body {font-size: 1024px;}}
+@media only screen and (max-width:992px) { body {font-size: 992px;}}
+@media only screen and (max-width:960px) { body {font-size: 960px;}}
+@media only screen and (max-width:928px) { body {font-size: 928px;}}
+@media only screen and (max-width:896px) { body {font-size: 896px;}}
+@media only screen and (max-width:864px) { body {font-size: 864px;}}
+@media only screen and (max-width:832px) { body {font-size: 832px;}}
+@media only screen and (max-width:800px) { body {font-size: 800px;}}
+@media only screen and (max-width:768px) { body {font-size: 768px;}}
+@media only screen and (max-width:736px) { body {font-size: 736px;}}
+@media only screen and (max-width:704px) { body {font-size: 704px;}}
+@media only screen and (max-width:672px) { body {font-size: 672px;}}
+@media only screen and (max-width:640px) { body {font-size: 640px;}}
+@media only screen and (max-width:608px) { body {font-size: 608px;}}
+@media only screen and (max-width:576px) { body {font-size: 576px;}}
+@media only screen and (max-width:544px) { body {font-size: 544px;}}
+@media only screen and (max-width:512px) { body {font-size: 512px;}}
+@media only screen and (max-width:480px) { body {font-size: 480px;}}
+@media only screen and (max-width:448px) { body {font-size: 448px;}}
+@media only screen and (max-width:416px) { body {font-size: 416px;}}
+@media only screen and (max-width:384px) { body {font-size: 384px;}}
+@media only screen and (max-width:352px) { body {font-size: 352px;}}
+@media only screen and (max-width:320px) { body {font-size: 320px;}}
+
+
+
+/* @end */
+
+@media only screen and (orientation:landscape) { 
+
+.rel {
+  font-size: 2.5% !important;
+  line-height: 1em;
+}
+
+.ipad .rel {
+  font-size: 1.45% !important;
+  line-height: 1em;
+}
+
+.px {
+  font-size: 16px;
+  line-height: 1em;
+}
+
+/*.page.columns {
+  -webkit-column-width: .9em;
+  -moz-column-width: .9em;
+  column-width: .9em;
+  -webkit-column-gap: 0;
+  -moz-column-gap: 1em;
+  column-gap: 0;  
+}*/
+
+}
+
+@media only screen and (orientation:portrait) { 
+
+.rel {
+  font-size: 1.9% !important;
+  line-height: 1em;
+}
+
+.ipad .rel {
+  font-size: 2.3% !important;
+  line-height: 1em;  
+}
+
+.px {
+  font-size: 16px;
+  line-height: 1em;
+}
+
+}
+
+
+
+/* @end */
+
+.page {
+  margin: 7em 3em 2em;
+}
+
+article header {
+  float: left;
+}
+
+article section {
+  padding: 0 3em;
+}
+
+article footer {
+  padding: 0 3em;
+  margin-top: -.5em;
+}
+
+article header figure img {
+  border-radius: 10em;
+}
+
+.logo {
+  text-shadow: 0 1px 0 #ffffff;
+  color: rgba(51, 51, 51, 0.82);
+  text-align: center;
+  font: bold 1.3em/2.2em Avenir;
+}
+
+#brand {
+  background-color: black;
+  position: absolute;
+  left: 0;
+  z-index: 6000;
+  top: 30px;
+}
+
+#brand h1 {
+  color: white;
+  text-shadow: 0 1px 1px black;
+  font-size: 1em;
+  line-height: 1em;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  margin-left: -1em;
+  padding: .5em 1em .4em 4em;
+}
+
+
+#brand i {
+  color: white;
+  position: absolute;
+  top: .5em;
+  left: 1.1em;
+  opacity: 0;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+}
+
+.blog-title {
+  position: absolute;
+  top: .45em;
+  font: bold 1em avenir;
+  text-transform: uppercase;
+  right: -3.4em;
+}
+
+#brand a:hover i, #shelf.push ~ .container #brand i {
+  opacity: 1;
+}
+
+.page h1 {
+  text-transform: uppercase;
+  font: 1.5em bree;
+  margin: 0 0 .15em;
+}
+
+.page article {
+  margin-bottom: 2em;
+}
+
+.page p, .page li {
+  margin-bottom: 1em;
+  text-shadow: 0 1px 0 white;
+  color: #333;
+  font: .95em/1.5em freight-sans-pro, helvetica;
+}
+
+.page article footer p {
+  font-size: .7em;
+  margin: 0;
+}
+
+.page article footer a {
+  padding: .25em;
+}
+
+.page p a {
+  color: #c84343;
+  text-transform: uppercase;
+  font: 200 .8em bree;
+}
+
+.page section a[href^="mailto:"]:before {
+  content: "\f003 ";
+  font-family: FontAwesome;
+  margin-right: .25em;
+}
+
+.page section a[href^="mailto:"]:after {
+  content: "";
+  margin-left: 0;
+}
+
+.pagination {
+  text-align: center;
+  letter-spacing: .05em;
+}
+
+.page p.pagination {
+  font-size: .8em;  
+}
+
+.pagination a {
+  padding: .25em;
+}

@@ -1,0 +1,118 @@
+.rel { font-size: 7%; line-height: 1em; }
+.dev:after { content: "scroll";}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  min-height: 600px;
+  margin: 0;
+  padding: 0;
+}
+
+.fauxport {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 104%;
+  overflow: hidden;
+}
+
+.scroll {
+  position: absolute;
+  top: 44px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: scroll;
+  overflow-x: hidden;
+  -moz-overflow-scrolling: touch;
+  -moz-transform: translate3d(0,0,0);
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+#shelf .scroll {
+  top: 0;
+}
+
+.loc1 #brand i {
+  opacity: 1 !important;
+  left: .8em !important;
+  font-size: 22px !important;
+  top: .5em !important;
+}
+
+.paging {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.page {
+  position: relative;
+  padding: .09em;
+}
+
+#cover.page {
+  height: 1.35em;
+  left: 0;
+}
+
+#cover.page header {
+  left: 2em;
+  right: 2em;
+  font-size: 70%;
+
+}
+
+header[role="main"] {
+  background-color: #333;
+  height: 44px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 6000;
+  -moz-box-shadow: inset 0 -1px 2px black;
+  -webkit-box-shadow: inset 0 -1px 2px black;
+  box-shadow: inset 0 -1px 2px black;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+}
+
+#shelf.push ~ .container header[role="main"] {
+  left: 160px;
+  right: -160px;
+}
+
+#brand {
+  background: none;
+  position: relative;
+  left: 0;
+  z-index: 6000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#brand h1, .loc1 #brand h1  {
+  margin: 0;
+  padding: 12px 0 !important;
+  font-size: 18px !important;
+}
+
+#next, #prev {
+  display: none;
+}
+
+@media screen and (orientation: landscape) {
+  #cover.page {
+    height: .45em;
+  }
+  
+  #cover.page header {
+    font-size: 60%;
+  }
+}
