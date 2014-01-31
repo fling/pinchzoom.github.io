@@ -7,7 +7,7 @@
           <ul>
           
           {% for post in site.categories.home %}
-          <li><a href="/#{ post.slug }}" class="child" onclick="paginate.scrollToPage(@index);return false"><strong>{ post.title }}</strong></a></li>
+          <li><a href="/#{{ post.index }}" class="child" onclick="paginate.scrollToPage({{ post.index }});return false"><strong>{{ post.title }}</strong></a></li>
           {% endfor %}
           
           </ul>

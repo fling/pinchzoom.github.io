@@ -5,6 +5,7 @@ subtitle: "envisioning the future"
 description: "we invest over 30% of our revenue in developing the next big thing in mobile."
 date:   2014-01-26 10:19:47
 categories: home
+index: 5
 ---
 
 a few years ago, we realized that many of our clients were in trouble. they were unprepared for the mobile revolution- using entirely outdated digital strategies that did not suit the evolving needs of their customers. 

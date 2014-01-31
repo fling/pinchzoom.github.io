@@ -5,6 +5,7 @@ subtitle: "established in 1999"
 description: "with an unrivaled decade of experience designing mobile apps, we are just getting started. just wait and see what comes next."
 date:   2014-01-27 10:19:47
 categories: home
+index: 4
 ---
 
 pinch/zoom founder Brian Fling has a long history in mobile dating back to 1999 – he designed some of the earliest mobile websites and native applications. 
